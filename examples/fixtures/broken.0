@@ -1,0 +1,5 @@
+// minimal fixture — intentionally broken
+pub fun main(world: World) -> Void raises {
+    let x: i32 = "not a number"
+    check world.out.write("nope\n")
+}
