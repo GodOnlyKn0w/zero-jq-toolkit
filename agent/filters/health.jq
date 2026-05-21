@@ -1,6 +1,7 @@
 # agent/filters/health.jq — 单文件编译健康摘要
-# 输入: zero check --json <file>
-# 输出: JSON, schemaVersion 1
+# category: agent
+# input:  zero check --json <file>
+# output: normative JSON, consumed by human/filters/health.jq
 # tested on zero v0.1.1
 #
 # 用法:

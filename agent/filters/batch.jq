@@ -1,8 +1,12 @@
 # agent/filters/batch.jq — 批量检查聚合（order-1 投影，不做判断）
-# 输入: jq -s 合并后的 normalized 结果数组
-# 参数: --argjson expected_fail_codes '["APP001"]'（可选）
-# 输出: JSON, schemaVersion 1
+# category: agent
+# input:  jq -s shared/normalize.jq output stream
+# args:   --argjson expected_fail_codes '["APP001"]'
+# output: normative JSON, consumed by human/filters/batch.jq
 # tested on zero v0.1.1
+#
+# pipeline:
+#   shared/normalize.jq | jq -s → agent/filters/batch.jq → human/filters/batch.jq
 
 ($expected_fail_codes // []) as $codes
 

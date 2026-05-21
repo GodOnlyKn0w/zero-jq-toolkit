@@ -1,6 +1,8 @@
 # human/filters/batch.jq — 批量检查结果渲染（纯排版，不做判断）
-# 输入: agent/filters/batch.jq 的 JSON 输出
-# 输出: 格式化文本
+# category: human
+# input:  agent/filters/batch.jq JSON
+# output: formatted text
+# upstream: agent/filters/batch.jq
 # tested on zero v0.1.1
 
 def hr: "----------------------------------------";

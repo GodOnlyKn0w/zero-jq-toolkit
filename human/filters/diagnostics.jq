@@ -1,6 +1,8 @@
-# human/filters/diagnostics.jq — 诊断报告渲染
-# 输入: agent/filters/diagnostics.jq 的 JSON 输出（规范格式）
-# 输出: 格式化文本（纯排版，不做判断）
+# human/filters/diagnostics.jq — 诊断报告渲染（纯排版）
+# category: human
+# input:  agent/filters/diagnostics.jq JSON
+# output: formatted text
+# upstream: agent/filters/diagnostics.jq
 # tested on zero v0.1.1
 #
 # 用法:

@@ -1,6 +1,8 @@
-# human/filters/size.jq — 编译体积报告渲染
-# 输入: agent/filters/size.jq 的 JSON 输出（规范格式）
-# 输出: 格式化文本（纯排版，不做判断）
+# human/filters/size.jq — 编译体积报告渲染（纯排版）
+# category: human
+# input:  agent/filters/size.jq JSON
+# output: formatted text
+# upstream: agent/filters/size.jq
 # tested on zero v0.1.1
 #
 # 用法:

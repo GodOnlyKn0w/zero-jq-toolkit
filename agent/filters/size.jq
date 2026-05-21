@@ -1,6 +1,7 @@
 # agent/filters/size.jq — 编译体积分析
-# 输入: zero size --json <file>
-# 输出: JSON, schemaVersion 1
+# category: agent
+# input:  zero size --json <file>
+# output: normative JSON, consumed by human/filters/size.jq
 # tested on zero v0.1.1
 #
 # 用法:

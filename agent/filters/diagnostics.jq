@@ -1,6 +1,7 @@
 # agent/filters/diagnostics.jq — 诊断码聚合分析
-# 输入: jq -s 合并后的 normalized 结果数组
-# 输出: JSON, schemaVersion 1
+# category: agent
+# input:  jq -s shared/normalize.jq output stream
+# output: normative JSON, consumed by human/filters/diagnostics.jq
 # tested on zero v0.1.1
 #
 # 用法:
